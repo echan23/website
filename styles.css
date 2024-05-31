@@ -1,0 +1,117 @@
+:root {
+    --black: #000000;
+    --white: #FFFFFF;
+    --linkcolor: #ff7400;
+    --lightgrey: #f2f3f4;
+    box-sizing: border-box;
+    --sidebarleftmargin: 180px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--lightgrey);
+    padding: 20px;
+    height: 150px;
+    color: var(--black);
+}
+
+.name {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 350px;
+    background-color: var(--lightgrey);
+    overflow-y: auto;
+    border-right: 1px solid var(--black);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.info-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-left: var(--sidebarleftmargin);
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    height: auto;
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-left: var(--sidebarleftmargin);
+    border: 2px solid black;
+}
+
+.email{
+    border-bottom: 1px solid black;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    gap: 10px;
+    margin-left: var(--sidebarleftmargin);
+}
+
+.link {
+    color: var(--linkcolor);
+    text-decoration: none;
+    text-align: center;
+}
+
+.info{
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center; 
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.main-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+.main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+}
+
+.content {
+    flex-grow: 1;
+    background-color: var(--lightgrey);
+    overflow-y: auto;
+    padding-left: 10px;
+}
